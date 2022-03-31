@@ -20,7 +20,7 @@ ini_set("display_errors", 1);
             }
             else {
                 // require('src/controllers/ProprietaireController.pph');
-                echo '404';
+                echo ''
             }
         }
     }  

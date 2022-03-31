@@ -19,8 +19,7 @@ ini_set("display_errors", 1);
                 require_once str_replace("\\", "/", $class. "php");
             }
             else {
-                // require('src/controllers/ProprietaireController.pph');
-                echo '404';
+                require('');
             }
         }
     }  

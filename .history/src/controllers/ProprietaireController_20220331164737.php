@@ -1,0 +1,1 @@
+salut, ici le controller du proprietaire
