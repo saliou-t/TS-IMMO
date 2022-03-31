@@ -37,7 +37,7 @@ class Proprietaire
     protected $telephone;
 
     /**
-     * @ORM\Column(type="string", nullable=false, length=16, unique=true)
+     * @ORM\Column(type="string", nullable=false, length=16)
      */
     protected $CNI;
 

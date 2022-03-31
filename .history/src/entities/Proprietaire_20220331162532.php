@@ -32,12 +32,13 @@ class Proprietaire
     protected $adresse;
 
      /**
-     * @ORM\Column(type="string", nullable=false, length=15, unique=true)
+     * @ORM\Column(type="string", nullable=false, length=15)
+     * @OR
      */
     protected $telephone;
 
     /**
-     * @ORM\Column(type="string", nullable=false, length=16, unique=true)
+     * @ORM\Column(type="string", nullable=false, length=16)
      */
     protected $CNI;
 

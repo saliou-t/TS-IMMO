@@ -32,19 +32,15 @@ class Proprietaire
     protected $adresse;
 
      /**
-     * @ORM\Column(type="string", nullable=false, length=15, unique=true)
+     * @ORM\Column(type="string", nullable=false, length=15)
      */
     protected $telephone;
 
     /**
-     * @ORM\Column(type="string", nullable=false, length=16, unique=true)
+     * @ORM\Column(type="string", nullable=false)
      */
     protected $CNI;
 
-    /**
-     * @ORM\Column(type="string", nullable=false, length=16)
-     */
-    protected $email;
 
 
     public function getId()
@@ -100,16 +96,6 @@ class Proprietaire
     public function setCNI($cni)
     {
         $this->CNI = $cni;
-    }
-
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    public function setEmail($cni)
-    {
-        $this->email = $email;
     }
 
 }
