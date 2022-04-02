@@ -8,8 +8,7 @@ ini_set("display_errors", 1);
         }
 
         static function autoload($class){
-
-            echo $class;
+            
             // die($class);
              if (file_exists("src/controller/".$class.".php")) {
                 require_once "src/controller/".$class.".php";

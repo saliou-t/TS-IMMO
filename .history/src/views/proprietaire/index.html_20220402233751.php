@@ -19,8 +19,7 @@ $datas = $_SESSION['liste'];
     <style>
         input[type=text]{
             width: 122px;
-            max-width: 302px;
-            height: 33px
+            max-width: 302px
         }
     </style>
 </head>
@@ -36,19 +35,19 @@ $datas = $_SESSION['liste'];
             N°
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Prénom">
+            <input type="text" placeholder="Prénom">
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Nom">
+            <input type="text" placeholder="Nom">
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Téléphone">
+            <input type="text" placeholder="Téléphone">
         </th>
         <th scope="col">
             Adresse
         </th> 
         <th scope="col text-center">Edite</th> 
-        <th scope="col ">Delete</th> 
+        <th scope="col">Delete</th> 
     </tr>
   </thead>
   <tbody>
@@ -61,7 +60,7 @@ $datas = $_SESSION['liste'];
                 <td><?php echo $datas[$item]->getTelephone() ?></td>
                 <td><?php echo $datas[$item]->getAdresse() ?></td>
                 <td >
-                    <a class="btn btn-info" href="">edit</a>
+                    <a class="btn btn-info" href="">supprimer</a>
                 </td>
                 <td>
                     <a class="btn btn-danger" href="">delete</a>

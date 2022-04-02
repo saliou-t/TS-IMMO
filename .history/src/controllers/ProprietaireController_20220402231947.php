@@ -17,7 +17,5 @@ class ProprietaireController {
 
     }
 
-    public function delete(){
-        
-    }
+    public function delete
 }

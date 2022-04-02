@@ -61,7 +61,7 @@ $datas = $_SESSION['liste'];
                 <td><?php echo $datas[$item]->getTelephone() ?></td>
                 <td><?php echo $datas[$item]->getAdresse() ?></td>
                 <td >
-                    <a class="btn btn-info" href="">edit</a>
+                    <a class="btn btn-info" href="">supprimer</a>
                 </td>
                 <td>
                     <a class="btn btn-danger" href="">delete</a>

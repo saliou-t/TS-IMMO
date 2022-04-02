@@ -16,13 +16,6 @@ $datas = $_SESSION['liste'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Proprietaires</title>
-    <style>
-        input[type=text]{
-            width: 122px;
-            max-width: 302px;
-            height: 33px
-        }
-    </style>
 </head>
 <body>
 <div class="container jumbotron">
@@ -31,24 +24,24 @@ $datas = $_SESSION['liste'];
     
 <table class="table table-border">
   <thead class="thead-dark">
-    <tr class="bg-dark text-light ">
-        <th scope="col text-center">
+    <tr class="bg-dark text-light">
+        <th scope="col">
             N°
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Prénom">
+            <input type="text" value="Prénom">
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Nom">
+            <input type="text" value="Nom">
         </th>
         <th scope="col">
-            <input class="form-control" type="text" placeholder="Téléphone">
+            <input type="text" value="Téléphone">
         </th>
         <th scope="col">
             Adresse
         </th> 
-        <th scope="col text-center">Edite</th> 
-        <th scope="col ">Delete</th> 
+        <th scope="col">Edite</th> 
+        <th scope="col">Delete</th> 
     </tr>
   </thead>
   <tbody>
@@ -61,7 +54,7 @@ $datas = $_SESSION['liste'];
                 <td><?php echo $datas[$item]->getTelephone() ?></td>
                 <td><?php echo $datas[$item]->getAdresse() ?></td>
                 <td >
-                    <a class="btn btn-info" href="">edit</a>
+                    <a class="btn btn-info" href="">supprimer</a>
                 </td>
                 <td>
                     <a class="btn btn-danger" href="">delete</a>
